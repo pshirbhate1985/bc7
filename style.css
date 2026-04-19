@@ -1,0 +1,111 @@
+#intro {
+    text-align: center;
+    grid-area: intro;
+}
+.main-section-content h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom:50px ;
+    background-color: greenyellow;
+    opacity: 0.6;
+}
+.teachers-info {
+    border-radius: 5px;
+    margin: 10px;
+    width: 400px;
+    box-shadow: 6px 0px 21px -3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+}
+ul {
+    list-style-type: none;
+}
+li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+    text-decoration: none;
+}
+li a:hover {
+    color: red;
+}
+nav li {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+#book-review p,h3 {
+    left: 40%;
+    width: 400px;
+    position: relative;
+}
+table {
+    margin: auto;
+}
+th,td {
+    padding: 10px;
+}
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: footer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+nav {
+    position: sticky;
+    top: 0;
+     z-index:2 ;
+     display: flex;
+     justify-content: center;
+     grid-area: nav;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+#videos div {
+    display: flex;
+    justify-content: space-around;
+}
+#teachers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#book-review p,h3{
+    width: 400px;
+    position: relative;
+    left: 40%;
+}
+#main-section {
+    grid-area: main-section;
+}
+#bestsellers {
+    grid-area: bestsellers;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas:'header header header header intro' 'nav nav nav nav intro' 'main-section main-section main-section main-section bestsellers'  ' footer footer footer footer footer';
+}
